@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESP32 DHT11 Dashboard</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h2>ESP32 DHT11 Dashboard</h2>
+    <div class="gauge-container">
+        <div>
+            <h3>Temperature</h3>
+            <canvas id="tempGauge" class="gauge"></canvas>
+        </div>
+        <div>
+            <h3>Humidity</h3>
+            <canvas id="humidityGauge" class="gauge"></canvas>
+        </div>
+    </div>
+    <div class="graph-container">
+        <h3>Temperature & Humidity Over Time</h3>
+        <canvas id="tempHumidityGraph"></canvas>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>
